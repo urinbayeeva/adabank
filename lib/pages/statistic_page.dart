@@ -184,14 +184,14 @@ class Statistic extends StatelessWidget {
                 GestureDetector(
                   onTap: (){
                     debugPrint("Tap");
-                    Navigator.pushNamed(context, Wallet.route);
+                    Navigator.pushReplacementNamed(context, HomePage.route);
                   },
                   child:  const Icon(Icons.wallet, size: 25, color: Colors.white,),
                 ),
                 GestureDetector(
                   onTap: (){
                     debugPrint("Tap");
-                    Navigator.pushNamed(context, Notifications.route);
+                   Navigator.pushReplacementNamed(context, HomePage.route);
                   },
                   child:  const Icon(Icons.notifications_active_sharp, size: 25, color: Colors.white,),
                 ),
