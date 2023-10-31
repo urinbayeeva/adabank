@@ -432,7 +432,7 @@ class HomePage extends StatelessWidget {
                         GestureDetector(
                           onTap: (){
                             debugPrint("Tap");
-                            Navigator.pushNamed(context, MyCard.route);
+                            Navigator.pushReplacementNamed(context, HomePage.route);
                           },
                           child:  const Icon(Icons.qr_code_scanner, size: 25, color: Colors.white,),
                         ),
@@ -446,7 +446,7 @@ class HomePage extends StatelessWidget {
                         GestureDetector(
                           onTap: (){
                             debugPrint("Tap");
-                            Navigator.pushNamed(context, Notifications.route);
+                            Navigator.pushReplacementNamed(context, HomePage.route);
                           },
                           child:  const Icon(Icons.notifications_active_sharp, size: 25, color: Colors.white,),
                         ),
